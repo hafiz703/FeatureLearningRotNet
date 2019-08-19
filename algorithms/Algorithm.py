@@ -303,7 +303,7 @@ class Algorithm():
         self.best_epoch = None
 
     def keep_record_of_best_model(self, eval_stats, current_epoch):
-	if self.keep_best_model_metric_name is not None:
+        if self.keep_best_model_metric_name is not None:
             metric_name = self.keep_best_model_metric_name
             if (metric_name not in eval_stats):
                 raise ValueError('The provided metric {0} for keeping the best model is not computed by the evaluation routine.'.format(metric_name))
