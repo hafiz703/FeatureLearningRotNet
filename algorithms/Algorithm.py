@@ -267,7 +267,6 @@ class Algorithm():
 
     def evaluate(self, dloader):
         self.logger.info('Evaluating: %s' % os.path.basename(self.exp_dir))
-
 	self.dloader = dloader
         self.dataset_eval = dloader.dataset
         self.logger.info('==> Dataset: %s [%d images]' % (dloader.dataset.name, len(dloader)))
